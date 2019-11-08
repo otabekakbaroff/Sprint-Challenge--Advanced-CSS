@@ -163,6 +163,7 @@ p {
 .navbar {
   background-color: #F6F6F6;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 .navbar h1 {
@@ -179,14 +180,24 @@ p {
   display: inline-flex;
   padding: 1.5% 1.5% 1.5% 1.5%;
 }
-.btn {
-  font-size: 150%;
-  width: 27%;
-  padding: 2.5% 0.5% 2.5% 0.5%;
-  border-radius: 6%;
-  background-color: #22283a;
-  color: white;
-  text-align: center;
+@media (max-width:500px) {
+  .navbar {
+    padding: 2%;
+    margin: 0% 15% 0% 15%;
+    width: 100%;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  .navbar h1 {
+    font-size: 325%;
+  }
+  .navbar a {
+    font-weight: 700;
+    font-size: 150%;
+    padding: 1.5% 3% 1.5% 3%;
+  }
 }
 footer {
   color: #22283B;
@@ -240,6 +251,15 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  font-size: 150%;
+  width: 27%;
+  background-color: #22283a;
+  color: white;
+  padding: 2.5% 0.5% 2.5% 0.5%;
+  border-radius: 6%;
+  text-align: center;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -248,4 +268,62 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  footer {
+    width: 100%;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  body {
+    width: 71%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0% 15% 10% 15%;
+  }
+  .intro img {
+    width: 100%;
+  }
+  .home .walk {
+    padding: 0;
+    margin-top: 60px;
+    border-top: 1px solid #dee2e6;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .home .walk .walk-img {
+    margin: 0;
+    width: 100%;
+  }
+  .home .walk .walk-text {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  .home .walk .walk-text .btn {
+    font-size: 215%;
+    width: 100%;
+    padding: 5%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: 100%;
+  }
 }

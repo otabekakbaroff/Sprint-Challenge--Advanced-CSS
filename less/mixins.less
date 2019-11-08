@@ -1,1 +1,11 @@
 // Mixins Here
+.flex(@justify, @direction) {
+    display:flex;
+    justify-content:@justify;
+    flex-direction: @direction;
+}
+.button(@bg-color:#22283a, @width:27%, @tx-color:white){
+    background-color:@bg-color;
+    width:@width;
+    color:@tx-color;
+}
