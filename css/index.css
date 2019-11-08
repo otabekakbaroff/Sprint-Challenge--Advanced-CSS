@@ -173,9 +173,9 @@ p {
 }
 .navbar {
   background-color: #F6F6F6;
-  display: flex;
   justify-content: center;
   flex-direction: column;
+  display: flex;
 }
 .navbar h1 {
   font-size: 3.2rem;
@@ -190,6 +190,10 @@ p {
 .navbar nav a {
   display: inline-flex;
   padding: 1.5% 1.5% 1.5% 1.5%;
+}
+.navbar nav a:hover {
+  background-color: black;
+  color: white;
 }
 @media (max-width:500px) {
   .navbar {
@@ -208,6 +212,10 @@ p {
     font-weight: 700;
     font-size: 150%;
     padding: 1.5% 3% 1.5% 3%;
+  }
+  .navbar a:hover {
+    background-color: black;
+    color: white;
   }
 }
 footer {
