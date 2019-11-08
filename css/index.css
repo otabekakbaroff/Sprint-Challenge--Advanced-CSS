@@ -160,6 +160,17 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width:500px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+  body {
+    width: 71%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 .navbar {
   background-color: #F6F6F6;
   display: flex;
@@ -208,6 +219,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width:500px) {
+  footer {
+    width: 100%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -270,25 +286,16 @@ footer {
   border-radius: 10px;
 }
 @media (max-width:500px) {
-  footer {
+  .container .intro img {
     width: 100%;
   }
-  h3 {
-    font-size: 2.5rem;
-  }
-  body {
-    width: 71%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .container {
+  .home {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0% 15% 10% 15%;
   }
-  .intro img {
+  .home .intro img {
     width: 100%;
   }
   .home .walk {
