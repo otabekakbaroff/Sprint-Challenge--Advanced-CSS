@@ -181,11 +181,13 @@ p {
   font-size: 3.2rem;
   display: flex;
   justify-content: center;
+  flex-direction: row;
   padding: 0.5%;
 }
 .navbar nav {
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 .navbar nav a {
   display: inline-flex;
@@ -204,6 +206,7 @@ p {
   .navbar nav {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
   }
   .navbar h1 {
     font-size: 325%;
@@ -276,13 +279,17 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  font-size: 150%;
-  width: 27%;
   background-color: #22283a;
+  width: 27%;
   color: white;
+  font-size: 150%;
   padding: 2.5% 0.5% 2.5% 0.5%;
   border-radius: 6%;
   text-align: center;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: black;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -294,6 +301,10 @@ footer {
   border-radius: 10px;
 }
 @media (max-width:500px) {
+  .btn:hover {
+    background-color: white;
+    color: black;
+  }
   .container .intro img {
     width: 100%;
   }
@@ -312,8 +323,8 @@ footer {
     border-top: 1px solid #dee2e6;
     padding-top: 5%;
     display: flex;
-    flex-direction: column-reverse;
     justify-content: center;
+    flex-direction: column-reverse;
   }
   .home .walk .walk-img {
     margin: 0;
